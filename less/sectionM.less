@@ -1,0 +1,57 @@
+.sectionM{
+   .container{
+        display: flex;
+    }
+    
+    h3{ 
+        color: @accent;
+        margin-bottom: 1em;
+    }
+}
+
+.container{
+    justify-content: space-between;
+}
+
+.col{
+    padding: 1em;
+}
+
+.colHighlight{
+    background: @accent;
+    border-radius: .2em;
+    
+    p{color: @main;}
+}
+
+.col1{
+    width: 24%;
+}
+
+.col2{
+    width: 49%;
+}
+
+.col3{
+    width: 74%;
+}
+
+@media (max-width: @breakpoint-md){
+.sectionM{
+    .container{
+        display: block;
+    }
+}
+
+.col1{
+    width: 100%;
+}
+
+.col2{
+    width: 100%;
+}
+
+.col3{
+    width: 100%;
+}
+}

@@ -1,0 +1,34 @@
+.learn{
+    background-color: @accent;
+    margin-bottom: 2em;
+    border-radius: .3em;
+
+    p{
+        margin-top: 2em;
+    }
+}
+
+.buttonContainer{
+    margin-top: 2em;
+    display: flex;
+    gap: .5rem;
+}
+
+.button{
+    padding: .8em;
+    border-radius: .15em;
+    background-color: @accent;
+    border: 1px solid @main;
+
+    &:hover{
+        background-color: @main;
+        color: @black;
+    }
+}
+
+@media (max-width: @breakpoint-md){
+.button{
+    padding: .6em;
+    border-radius: .15em;
+}
+}
